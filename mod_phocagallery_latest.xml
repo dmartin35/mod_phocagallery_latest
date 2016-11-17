@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_phocagallery_latest</name>
+	<author>AS Golf Rennes</author>
+	<creationDate>November 2016</creationDate>
+	<copyright></copyright>
+	<license></license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>0.1.0</version>
+	<description>MOD_LATEST_PHOCA_CATEGORIES_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_phocagallery_latest">mod_phocagallery_latest.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>	
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_phocagallery_latest.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_phocagallery_latest.sys.ini</language>
+		
+		<language tag="fr-FR">fr-FR/fr-FR.mod_phocagallery_latest.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_phocagallery_latest.sys.ini</language>
+	</languages>
+
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LATEST_PHOCA_CATEGORIES" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+					name="count"
+					type="text"
+					label="MOD_LATEST_PHOCA_CATEGORIES_FIELD_COUNT_LABEL"
+					description="MOD_LATEST_PHOCA_CATEGORIES_FIELD_COUNT_DESC"
+					default="5"
+				/>
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
